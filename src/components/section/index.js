@@ -1,12 +1,12 @@
 import React from 'react';
 
-import sectionStyles from '../section';
+import sectionStyles from '../section/index.module.css';
 
 
 function Section() {
     return(
       <div className={ sectionStyles.container }> 
-      <h1> Estos son algunos de mis proyectos :D </h1>
+      <p classname={ sectionStyles.p }> Algunos de mis proyectos </p>
       </div>
     );
   }

@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    background-color: rgb(18, 14, 41);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    text-decoration: none;
+    width: 100px;
+    height: 40px;
+    background-color:rgb(18, 14, 41) ;
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    border: none;
+    outline:none;
+    line-height: 40px;
+}
