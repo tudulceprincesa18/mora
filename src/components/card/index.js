@@ -1,15 +1,14 @@
 import React from 'react';
 
-import cardStyles from '../footer/index.module.css';
+import cardStyles from '../card/index.module.css';
 
 
-function Footer() {
+function Card() {
     return(
       <div className={ cardStyles.container }> 
-      <button> Ir a la pagina </button>
-    
+      <button className={ cardStyles.button }> ver </button>
       </div>
     );
   }
   
-  export default Footer;
+  export default Card;

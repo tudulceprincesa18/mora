@@ -1,17 +1,17 @@
 import React from 'react';
 
-import { Route} from "wouter";
+import { Link, Route} from "wouter";
 import navStyles from '../navbar/index.module.css';
 
 
 function Navbar() {
   return(
     <div className={navStyles.contenedor}>
-      <a href="/inicio" className={ navStyles.button }> Inicio </a>
+      <Link to="/inicio" className={ navStyles.button }> Inicio </Link>
       <Route path="/inicio"> </Route>
-      <a href="/sobre" className={ navStyles.button }> Sobre mi </a>
+      <Link to="/sobre" className={ navStyles.button }> Sobre mi </Link>
       <Route path="/sobre"> </Route>
-      <a href="/cv" className={ navStyles.button }> Curricullum </a>
+      <Link to="/cv" className={ navStyles.button }> Curricullum </Link>
       <Route path="/cv"> </Route>
     </div>
   );
