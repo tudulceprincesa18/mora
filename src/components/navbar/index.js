@@ -4,6 +4,7 @@ import { Link, Route} from "wouter";
 import navStyles from '../navbar/index.module.css';
 
 
+
 function Navbar() {
   return(
     <div className={navStyles.contenedor}>
