@@ -4,7 +4,7 @@ import ContacStyles from './index.module.css';
 
 const Contacto = () => {
     return (
-        <div className={ContacStyles.container}>
+        <div className={ContacStyles.container} id="contacto">
             <div className={ContacStyles.formulario}>
             <h1 className={ContacStyles.h1}>Contacto</h1>
             <form action="https://formsubmit.co/yasmartins999@gmail.com" method="POST" className={ContacStyles.form}>
