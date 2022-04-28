@@ -7,6 +7,8 @@ import Section from "./components/section";
 import Footer from "./components/footer";
 import Cv from "./components/cv";
 import Contacto from "./components/contacto";
+import Swiper from "./components/Swiper";
+
 
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Header/>
+      <Swiper/>
       <Section/>
       <Cv />
       <Contacto />
