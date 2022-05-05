@@ -1,34 +1,29 @@
-import React from 'react';
-import { Link } from "react-scroll";
+import React, { useRef } from 'react';
 
 
 import navStyles from '../navbar/index.module.css';
 
-function Navbar() {
-  return(
-    <div className={navStyles.contenedor}>
-        <ul className="nav-items">
-         <Link
-            className={ navStyles.button }
-            activeClass="active"
-            to="cv"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-           > Curricullum </Link>
-          <Link
-            className={ navStyles.button }
-            activeClass="active"
-            to="contacto"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-           > Contacto </Link>
-          </ul>
-    </div>
-  );
-}
+const Navbar = () => {
+  const contactoRef = useRef(null)
+  const curriculumRef = useRef(null)
+
+  const handleCurriculum= () => {
+       curriculumRef.current.scrollIntoView()
+  }
+  const handleContacto = () => {
+       contactoRef.current.scrollIntoView()
+  }
+    return (
+      <div className={ navStyles.contenedor }>
+           <navbar>
+             <button className={ navStyles.button } onClick={handleCurriculum}>Curriculum</button>
+             <button className={ navStyles.button } onClick={handleContacto}>Contacto</button>
+           </navbar>
+           
+          <div className={ navStyles.button } ref={curriculumRef}></div>
+          <div className={ navStyles.button } ref={contactoRef}></div>
+      </div>
+    );
+  };
 
 export default Navbar;

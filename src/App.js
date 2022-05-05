@@ -14,7 +14,6 @@ import Swiper from "./components/Swiper";
 function App() {
   return (
     <div className="App">
-      <Navbar/>
       <Header/>
       <Swiper/>
       <Section/>
