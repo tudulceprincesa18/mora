@@ -14,6 +14,7 @@ const Navbar = () => {
            <navbar>
              <button className={ navStyles.button }><a href='#cv' onCLick={handleClick}>Curricullum</a></button>
              <button className={ navStyles.button }><a href='#contacto' onClick={handleClick}>Contacto</a></button>
+             <button className={ navStyles.button }><a href='#proyectos' onClick={handleClick}>Proyectos</a></button>
            </navbar>
       </div>
     );

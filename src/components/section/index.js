@@ -6,7 +6,7 @@ import sectionStyles from '../section/index.module.css';
 
 function Section() {
     return(
-      <div className={ sectionStyles.container }> 
+      <div className={ sectionStyles.container } id="proyectos"> 
       <p classname={ sectionStyles.p }> Algunos de mis proyectos </p>
       <button className={ sectionStyles.button }>
        <a href='https://entropica.netlify.app/'> Entropica </a>
