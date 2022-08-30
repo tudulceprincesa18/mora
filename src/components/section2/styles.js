@@ -5,6 +5,11 @@ export const Text = styled.p`
   heigth: 100%;
   text-align: center;
   display: flex;
+  @media(max-width: 768px){
+    width:50%;
+    heigth: 300px;
+    display: flex;
+    justify-content:center;
 `
 export const Div = styled.div`
 margin: 0;
@@ -23,8 +28,7 @@ border-radius:10px;
   width:50%;
   heigth: 300px;
   display: flex;
-  align-items: flex-start;
-
+  justify-content:center;
 `
 
 export const Container = styled.div`
@@ -43,6 +47,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content:center;
     margin:0;
     padding:0;
 }
