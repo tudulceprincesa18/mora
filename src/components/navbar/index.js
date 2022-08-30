@@ -1,27 +1,20 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react'
 
 
 import navStyles from '../navbar/index.module.css';
 
 const Navbar = () => {
-  const contactoRef = useRef(null)
-  const curriculumRef = useRef(null)
+  const [click, setClick] = useState(false)
+  const handleClick = () => setClick(!click)
 
-  const handleCurriculum= () => {
-       curriculumRef.current.scrollIntoView()
-  }
-  const handleContacto = () => {
-       contactoRef.current.scrollIntoView()
-  }
+  
+  
     return (
       <div className={ navStyles.contenedor }>
            <navbar>
-             <button className={ navStyles.button } onClick={handleCurriculum}>Curriculum</button>
-             <button className={ navStyles.button } onClick={handleContacto}>Contacto</button>
+             <button className={ navStyles.button }><a href='#cv' onCLick={handleClick}>Curricullum</a></button>
+             <button className={ navStyles.button }><a href='#contacto' onClick={handleClick}>Contacto</a></button>
            </navbar>
-           
-          <div className={ navStyles.button } ref={curriculumRef}></div>
-          <div className={ navStyles.button } ref={contactoRef}></div>
       </div>
     );
   };

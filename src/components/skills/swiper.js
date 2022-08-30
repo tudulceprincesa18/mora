@@ -19,13 +19,10 @@ export default function Swipers() {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide className="uno"> Html5</SwiperSlide>
-        <SwiperSlide className="dos"> Css3 </SwiperSlide>
-        <SwiperSlide className="siete"> Javascript</SwiperSlide>
-        <SwiperSlide className="tres"> React.js </SwiperSlide>
-        <SwiperSlide className="cuatro"> Styled components </SwiperSlide>
-        <SwiperSlide className="cinco"> TypeScript </SwiperSlide>
-        <SwiperSlide className="seis"> Chakra ui</SwiperSlide>
+        <SwiperSlide className="uno"></SwiperSlide>
+        <SwiperSlide className="dos"></SwiperSlide>
+        <SwiperSlide className="tres"></SwiperSlide>
+        <SwiperSlide className="cuatro"></SwiperSlide>
       </Swiper>
     </>
   );

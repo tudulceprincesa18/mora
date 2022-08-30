@@ -57,31 +57,18 @@ body {
 }
 
 .tres{
+  background-image: url('https://thumbs.dreamstime.com/b/javascript-logo-editorial-illustrative-white-background-javascript-logo-editorial-illustrative-white-background-eps-download-208329455.jpg');
+  background-size: contain;
+}
+
+.cuatro{
     background-image: url('https://qcqcdn.com/linqhost/website/2020/11/New-Project-58.png');
     background-size: cover;
 }
 
-.cuatro{
-    background-image: url('data:image/png;base64,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');
-    background-size: contain;
-}
 
-.cinco{
-    background-image: url('https://img.icons8.com/material-sharp/384/typescript.png');
-    background-size: cover;
-}
 
-.seis{
-    background-image: url('https://avatars.githubusercontent.com/u/54212428?s=280&v=4');
-    background-size: cover;
-}
-
-.siete{
-    background-image: url('https://thumbs.dreamstime.com/b/javascript-logo-editorial-illustrative-white-background-javascript-logo-editorial-illustrative-white-background-eps-download-208329455.jpg');
-    background-size: cover;
-}
-
-@media(max-width: 768px){
+@media(min-width: 300px){
   .uno{
     background-color: rgb(43, 0, 43);
   }
@@ -95,18 +82,6 @@ body {
   }
 
   .cuatro{
-    background-color: rgb(43, 0, 43);
-  }
-
-  .cinco{
-    background-color: rgb(43, 0, 43);
-  }
-
-  .seis{
-    background-color: rgb(43, 0, 43);
-  }
-
-  .siete{
     background-color: rgb(43, 0, 43);
   }
 
