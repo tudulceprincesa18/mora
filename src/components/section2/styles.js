@@ -29,6 +29,12 @@ border-radius:10px;
   heigth: 300px;
   display: flex;
   justify-content:center;
+  background-position: center;
+
+  @media(max-width: 300px;){
+    width: 90%;
+    heigth: 80%;
+  }
 `
 
 export const Container = styled.div`
@@ -56,6 +62,9 @@ export const Container = styled.div`
   width: 250px; 
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
 }
 ` 
 export const H1 = styled.p`
