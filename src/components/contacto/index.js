@@ -14,9 +14,7 @@ const Contacto = () => {
                 <button className={ContacStyles.button}>Enviar</button>
             </form>
             </div>
-            <div className={ContacStyles.image}>
-                <img src="https://i.pinimg.com/originals/5d/28/4d/5d284d7507d094ae95fccbb224d8d605.jpg" alt="imag"/>
-            </div>
+            <div className={ContacStyles.image}> </div>
         </div>
     );
 };

@@ -16,7 +16,7 @@ margin: 0;
 padding: 0;
 width: 30%;
 height: 450px;
-background-image: url('https://i.pinimg.com/564x/d7/0e/19/d70e19825501c17e87f19981df2b4004.jpg');
+background-image: url('https://thenounproject.com/api/private/icons/3916067/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABjZCV2us388aXIqoW_jFttaYa_LBDQb5qoA0KAk8uOTTWhHjoVnPiq0Y8eukLW7wUyxzzYIhJhtKGI4oMhszUkc5r-rA%3D%3D');
 background-size: cover;
 display:flex;
 flex-direction: column;
@@ -39,7 +39,7 @@ border-radius:10px;
 
 export const Container = styled.div`
   width: 100%;
-  heigth: 500px;
+  heigth: 900px;
   margin: 50px; 
   display: flex;
   align-items: center;

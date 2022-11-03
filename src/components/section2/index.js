@@ -7,7 +7,7 @@ const Section2 = () => {
       <Container>
         <Div> </Div>
         <Text>
-          <H1> Ademas de trabajar con React.js, soy capaz de trabajar con diversas herramientas 
+          <H1> Principalmente me desempeño con React.js pero tambien soy capaz de trabajar con diversas herramientas 
             complementarias, tales como Styled-Components, Material-ui, Bootstrap, Swiper.js, 
             react-route, react testing library y typescript. 
           </H1>
