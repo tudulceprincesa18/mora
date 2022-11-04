@@ -14,7 +14,9 @@ const Contacto = () => {
                 <button className={ContacStyles.button}>Enviar</button>
             </form>
             </div>
-            <div className={ContacStyles.image}> </div>
+            <div className={ContacStyles.image}>
+                <img alt="imagen" src='https://us.123rf.com/450wm/martialred/martialred1703/martialred170300026/74131554-sobre-de-mensaje-o-sobre-de-carta-de-carta-delgada-icono-de-vector-de-arte-para-aplicaciones-y-sitio.jpg?ver=6'/>
+            </div>
         </div>
     );
 };
