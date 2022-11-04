@@ -12,10 +12,24 @@ export const Text = styled.p`
     display: flex;
     justify-content:center;
 `
+export const Button = styled.button`
+  margin: 20px; 
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #4040dc;
+  cursor:pointer;
+`
+export const ButtonGroup = styled.div`
+  display: flex;
+  flex-direction: row;
+`
+
 export const Div = styled.div`
 margin: 0;
 padding: 0;
-width: 30%;
+width: 70%;
 height: 450px;
 background-image: url(${img2});
 background-size: cover;
@@ -73,5 +87,10 @@ export const H1 = styled.p`
   font-size: 20px;
   text-align:center;
   display: flex; 
-  padding: 30px;
+`
+export const Column = styled.div`
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `

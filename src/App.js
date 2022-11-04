@@ -4,7 +4,6 @@ import Navbar from "./components/navbar";
 import Header from "./components/header";
 import Section from "./components/section";
 import Footer from "./components/footer";
-import Cv from "./components/cv";
 import Contacto from "./components/contacto";
 import Section2 from "./components/section2";
 import Skills from "./components/skills/skills";
@@ -20,7 +19,6 @@ function App() {
       <Section2 />
       <Skills/>
       <Section/>
-      <Cv />
       <Contacto />
       <Footer />
     </div>

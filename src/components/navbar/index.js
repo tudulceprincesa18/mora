@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
       <div className={ navStyles.contenedor }>
            <navbar>
-             <button className={ navStyles.button }><a href='#cv' onCLick={handleClick}>Curricullum</a></button>
+             <button className={ navStyles.button }><a href='#sobremi' onCLick={handleClick}>Sobre mi</a></button>
              <button className={ navStyles.button }><a href='#contacto' onClick={handleClick}>Contacto</a></button>
              <button className={ navStyles.button }><a href='#proyectos' onClick={handleClick}>Proyectos</a></button>
            </navbar>
