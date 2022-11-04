@@ -2,6 +2,7 @@ import React from 'react';
 
 
 import headerStyles from '../header/index.module.css';
+import img from '../../img/compu.svg';
 
 function Header() {
     return(
@@ -11,7 +12,7 @@ function Header() {
         <h2 className={ headerStyles.h2 }> Frontend developer de buenos aires, argentina. </h2>
           </div>
           <div className={ headerStyles.img }>
-            <img alt='imgsvg' src='https://thenounproject.com/api/private/icons/4257346/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABjZCENjByJ05U_7Y_CqlEjk7VsklnvUBdzGVqIQRIsoafXaackrxpYW6bwJmLOJpYQ3raTdhB-PEXDEi2LE4s6VOJ7jw%3D%3D'/>
+            <img alt='imgsvg' src={img}/>
           </div>
       </div>
     );

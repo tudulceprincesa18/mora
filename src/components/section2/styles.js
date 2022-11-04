@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import img2 from '../../img/yas.svg';
 
 export const Text = styled.p`
   width: 40%;
@@ -16,7 +17,7 @@ margin: 0;
 padding: 0;
 width: 30%;
 height: 450px;
-background-image: url('https://thenounproject.com/api/private/icons/3916067/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABjZCV2us388aXIqoW_jFttaYa_LBDQb5qoA0KAk8uOTTWhHjoVnPiq0Y8eukLW7wUyxzzYIhJhtKGI4oMhszUkc5r-rA%3D%3D');
+background-image: url(${img2});
 background-size: cover;
 display:flex;
 flex-direction: column;
@@ -39,14 +40,15 @@ border-radius:10px;
 
 export const Container = styled.div`
   width: 100%;
-  heigth: 900px;
-  margin: 50px; 
+  heigth: 100vh; 
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  margin-top: 100px;
-  margin-bottom:0;
+  margin-top: 200px;
+  margin-bottom: 200px;
+
+
   @media(max-width: 768px){
     width:190%;
     heigth: 300px;
