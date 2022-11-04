@@ -18,8 +18,8 @@ function App() {
       <Navbar/>
       <Header/>
       <Section2 />
-      <Section/>
       <Skills/>
+      <Section/>
       <Cv />
       <Contacto />
       <Footer />
