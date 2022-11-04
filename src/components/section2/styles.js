@@ -39,16 +39,21 @@ text-align: center;
 justify-content: center;
 align-items: center;
 border-radius:10px;
-@media(max-width: 768px){
-  width:50%;
-  heigth: 300px;
+@media(min-width: 768px){
+  width:60%;
+  heigth: auto;
   display: flex;
+  flex-direction: column;
   justify-content:center;
-  background-position: center;
+  background-position: absolute;
 
   @media(max-width: 300px;){
-    width: 90%;
-    heigth: 80%;
+    width: 100%;
+    heigth: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    background-position: absolute;
   }
 `
 
@@ -61,16 +66,17 @@ export const Container = styled.div`
   justify-content: center;
   margin-top: 200px;
   margin-bottom: 200px;
-
+  overflow: hidden;
 
   @media(max-width: 768px){
-    width:190%;
-    heigth: 300px;
+    width:105%;
+    heigth: 400px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content:center;
-    margin:0;
+    align-self: center;
+    margin-bottom: 200px;
     padding:0;
 }
 

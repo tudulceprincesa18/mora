@@ -58,28 +58,31 @@ body {
     align-items: center; 
 }
 
-@media(max-width:300px) {
-   .header{
+@media only screen and (max-width:780px) {
+   .container{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: absolute;
     width: 100%;
     padding: 0;
     margin: 0;
+    overflow: hidden;
    } 
 
+   .header{
+    width: 100%;
+    height: auto;
+   }
+
    .h1{
-    width: 90%;
-    padding: 0;
-    align-items: flex-start;
+    width: 100%;
    }
 
    .h2{
-    width: 90%;
-    margin-top: 15px;
-    align-items: flex-start;
+    width: 100%;
    }
    .img{
-    width: auto;
+    width: 0;
    }
 }
