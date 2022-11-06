@@ -57,12 +57,53 @@ body {
     cursor: pointer;
 }
 
-@media only screen and (min-width:300px){
+@media only screen and (max-width:760px){
     .container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .buttons{
+        flex-direction: column;
+    }
+
+    .button1{
+        width: 350px;
+        height: 350px;
+    }
+
+    .button2{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+
+
+@media only screen and (max-width:375px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 200px;
     }
     .buttons{
-        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button1{
+        width: 250px;
+        height: auto;
+    }
+
+    .button2{
+        width: 250px;
+        height: auto;
     }
 }
