@@ -58,7 +58,7 @@ body {
     align-items: center; 
 }
 
-@media only screen and (max-width:780px) {
+@media only screen and(max-width:780px) {
    .container{
     display: flex;
     justify-content: center;
@@ -85,4 +85,22 @@ body {
    .img{
     width: 0;
    }
+}
+
+@media only screen and(max-width: 340px){
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-position: absolute;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+       } 
+
+       .img{
+        display: none;
+       }
 }

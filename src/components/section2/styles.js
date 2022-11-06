@@ -24,6 +24,16 @@ export const Button = styled.button`
 export const ButtonGroup = styled.div`
   display: flex;
   flex-direction: row;
+
+  @media(max-width: 780px){
+    display:flex;
+    flex-direction: column;
+  }
+
+  @media(min-width: 300px){
+    display: flex;
+    flex-direction: column;
+  }
 `
 
 export const Div = styled.div`
@@ -99,4 +109,5 @@ export const Column = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 `
