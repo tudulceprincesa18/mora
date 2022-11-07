@@ -1,18 +1,24 @@
-body {
-    margin: 0;
-    padding: 0;
-}
+import styled from 'styled-components';
+import kitty from '../../screenshot/criptos.jpg';
+import entropicaimg from '../../screenshot/entropica.jpg';
 
-.buttons{
+
+
+export const Buttons = styled.div `
     display: flex;
     flex-direction: row;
-}
 
-.p{
+    @media(max-width: 780px){
+        display: flex;
+        flex-direction: column;
+    }
+    `
+
+export const P = styled.p `
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+`
 
-.container {
+export const Container = styled.div `
     background-color: white;
     width: 100%;
     height: 100vh;
@@ -24,14 +30,23 @@ body {
     text-align: center;
     align-items: center;
     margin-top: 50px;
-}
 
-.button1 {
+    @media(max-width: 780px){
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        heigth: auto;
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+ `
+
+export const Button1 = styled.button  `
     width: 400px;
     min-width: 100px;
     min-height: 60px;
     height: 300px;
-    background-image: url("../../screenshot/entropica.jpg");
+    background-image: url(${entropicaimg});
     background-size:cover;
     background-position: center;
     outline: none;
@@ -40,13 +55,19 @@ body {
     border-radius: 20px;
     transition: all 500ms ease-out;
     cursor: pointer;
-}
-.button2 {
+
+    @media(max-width: 380px){
+        width: 250px;
+        heigth: auto; 
+    }
+ `
+
+export const Button2 = styled.button  `
     width: 400px;
     min-width: 100px;
     min-height: 60px;
     height: 300px;
-    background-image: url("../../screenshot/criptos.jpg");
+    background-image: url(${kitty});
     background-size:cover;
     background-position: center;
     outline: none;
@@ -55,55 +76,9 @@ body {
     border-radius: 20px;
     transition: all 500ms ease-out;
     cursor: pointer;
-}
 
-@media only screen and (max-width:760px){
-    .container{
-        width: 100%;
-        height: auto;
-        display: flex;
-        margin-top: 100px;
-        margin-bottom: 100px;
-    }
-
-    .buttons{
-        flex-direction: column;
-    }
-
-    .button1{
-        width: 350px;
-        height: 350px;
-    }
-
-    .button2{
-        width: 350px;
-        height: 350px;
-    }
-}
-
-
-
-@media only screen and (max-width:375px){
-    .container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 200px;
-    }
-    .buttons{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .button1{
+    @media(max-width: 380px){
         width: 250px;
-        height: auto;
+        heigth: auto; 
     }
-
-    .button2{
-        width: 250px;
-        height: auto;
-    }
-}
+ `

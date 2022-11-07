@@ -1,9 +1,6 @@
-body {
-    margin: 0;
-    padding: 0;
-}
+import styled from 'styled-components'
 
-.contenedor {
+export const Contenedor = styled.div`
     background-color: #4040dc;
     width: 100%;
     height: 80px;
@@ -11,10 +8,14 @@ body {
     align-items: center;
     justify-content: flex-end;
     margin-right: 30px;
+    color: white;
     background-position: absolute;
-}
+`
+export const Nav = styled.div`
+    justify-content: center;
+`
 
-.button {
+  export const Button = styled.button`
     text-decoration: none;
     width: 100px;
     height: 40px;
@@ -26,24 +27,5 @@ body {
     outline:none;
     margin-right: 50px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+    `
 
-@media only screen and (max-width: 300px){
-    .contenedor{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-    }
-
-    .button{
-        width: 100%;
-        height: auto;
-        display: inline-block;
-    }
-}

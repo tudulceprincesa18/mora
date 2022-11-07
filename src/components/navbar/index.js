@@ -1,22 +1,15 @@
-import React, { useState } from 'react'
-
-
-import navStyles from '../navbar/index.module.css';
+import React from 'react'
+import { Contenedor, Button, Nav } from './estilos';
 
 const Navbar = () => {
-  const [click, setClick] = useState(false)
-  const handleClick = () => setClick(!click)
-
-  
-  
     return (
-      <div className={ navStyles.contenedor }>
-           <navbar>
-             <button className={ navStyles.button }><a href='#sobremi' onCLick={handleClick}>Sobre mi</a></button>
-             <button className={ navStyles.button }><a href='#contacto' onClick={handleClick}>Contacto</a></button>
-             <button className={ navStyles.button }><a href='#proyectos' onClick={handleClick}>Proyectos</a></button>
-           </navbar>
-      </div>
+      <Contenedor>
+           <Nav>
+             <Button><a href='#sobremi'>Sobre mi</a></Button>
+             <Button><a href='#contacto'>Contacto</a></Button>
+             <Button><a href='#proyectos'>Proyectos</a></Button>
+           </Nav>
+      </Contenedor>
     );
   };
 

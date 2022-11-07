@@ -1,18 +1,22 @@
-body {
-    margin: 0;
-    padding: 0;
-}
+import styled from 'styled-components';
+import img from '../../img/compu.svg';
 
-.container{
+export const Container = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%;
     height: 95vh;
     background-color: #4040dc;
-}
 
-.header {
+    @media(max-width: 780px){
+        width: 100%;
+        heigth: auto;
+        display: flex;
+    }
+ `
+
+export const HeaderCont = styled.div `
     width: 50%;
     height: auto;
     background-color: #4040dc;
@@ -22,10 +26,16 @@ body {
     flex-direction: column;
     align-items: center;
     color: white;
-}
+
+    @media(max-width: 780px){
+        jutify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+`
 
 
-.h1 {
+export const H1 = styled.h1 `
     margin: 0;
     display: flex;
     justify-content: flex-start;
@@ -34,85 +44,32 @@ body {
     font-size: 50px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
-}
+    `
 
-.h2 {
+export const H2 = styled.h2 `
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     font-size: 18px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+    `
 
-.img{
-    width: 50%;
+export const Img = styled.div `
+    width: 65%;
     height: 95vh;
     background-color: #4040dc;
-    background-size: contain;
+    background-image: url(${img});
+    background-size: cover;
     background-position: absolute;
     display: flexbox;
     overflow: hidden;
     justify-content: center;
     flex-direction: column;
     align-items: center; 
-}
 
-@media only screen and(min-width:780px) {
-   .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: absolute;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-   } 
-
-   .header{
-    width: 100%;
-    height: auto;
-   }
-
-   .h1{
-    width: 100%;
-   }
-
-   .h2{
-    width: 100%;
-   }
-   .img{
-    width: 0;
-   }
-}
-
-@media only screen and(max-width: 375px){
-    .container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-position: absolute;
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        overflow: hidden;
-       } 
-
-       .header{
-        width: 100%;
-       }
-
-       .h1{
-        width: 90%;
-       }
-
-       .h2{
-        width: 90%;
-       }
-
-       .img{
+    @media(max-width: 780px){
+        display: none;
         width: 0;
-       }
-}
+    }
+`

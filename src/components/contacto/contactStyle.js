@@ -1,9 +1,6 @@
-body {
-    margin: 0;
-    padding: 0;
-}
+import styled from 'styled-components';
 
-.container{
+export const Container = styled.div `
     width: 100%;
     height: 100vh;
     background-color: white;
@@ -13,26 +10,48 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-}
 
-.h1{
+    @media(max-width:780px){
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 150px;
+        }
+
+    `
+
+export const H1 = styled.h1 `
     font-size: 30px;
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+`
 
-.form {
+export const Form = styled.div `
     display: flex;
     flex-direction: column;
-}
+ `
 
-.formulario{
+export const Formulario = styled.div  `
     display: flex;
     flex-direction: column;
     min-width: 200px;
-}
 
-.input {
+    @media(max-width: 380px){
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        heigth: auto; 
+        justify-content: center;
+        align-items: center;
+    }
+ `
+
+
+export const Input = styled.input  `
     min-width: 200px;
     margin:10px; 
     width: 300px;
@@ -41,9 +60,14 @@ body {
     border-radius: 20px;
     outline: 0;
     text-align: center;
-}
 
-.button {
+    @media(max-width: 380px){
+        width: 245px;
+    }
+ `
+
+
+export const Button = styled.button `
     width: 300px;
     height: 40px;
     outline: 0;
@@ -51,30 +75,18 @@ body {
     background-color: #4040dc;
     color: black;
     margin: 10px;
-    min-width: 200px;
-}
 
-.image {
+    @media(max-width: 380px){
+        width: 245px;
+    }
+ `
+
+
+ export const Image = styled.div`
     width: 20%;
     height: 30%;
     background-size: cover;
     background-position: absolute;
     min-width: 5px;
     min-height: 5px;
-}
-
-@media(max-width:780px){
-    .container{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 150px;
-    }
-
-    .image{
-        display: none;
-    }
-}
+ `

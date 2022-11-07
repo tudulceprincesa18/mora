@@ -1,6 +1,6 @@
 import React from 'react';
 
-import sectionStyles from '../skills/index.module.css';
+import { Cont, H1, Section, One, Two, Three, Four, Five, Six, Seven, Eigth, Nine } from './skillStyles.js';
 import { AiFillHtml5 } from 'react-icons/ai';
 import { DiCss3 } from 'react-icons/di';
 import { SiJavascript, SiReact, SiMaterialdesign, SiChakraui, SiTypescript, SiTestinglibrary } from 'react-icons/si'
@@ -8,24 +8,24 @@ import { FaGithub } from 'react-icons/fa';
 
 const Skills = () => {
     return (
-        <div className={ sectionStyles.cont }>
+        <Cont>
           <div>
-          <h1 className={ sectionStyles.h1 }> Skills </h1>
+          <H1> Skills </H1>
           </div>
-          <div className={ sectionStyles.section} > 
-            <div className={sectionStyles.one}> Html5 <AiFillHtml5/></div>
-            <div className={sectionStyles.two}> Css3 <DiCss3/> </div>
-            <div className={sectionStyles.three}> Javascript <SiJavascript/> </div>
+          <Section> 
+            <One> Html5 <AiFillHtml5/></One>
+            <Two> Css3 <DiCss3/> </Two>
+            <Three> Javascript <SiJavascript/> </Three>
 
-            <div className={sectionStyles.four}> React js <SiReact/></div>
-            <div className={sectionStyles.five}> Material ui <SiMaterialdesign/></div>
-            <div className={sectionStyles.six}> Chakra <SiChakraui/></div>
+            <Four> React js <SiReact/></Four>
+            <Five> Material ui <SiMaterialdesign/></Five>
+            <Six> Chakra <SiChakraui/></Six>
 
-            <div className={sectionStyles.seven}> Typescript <SiTypescript/> </div>
-            <div className={sectionStyles.eigth}> Git-Gitflow <FaGithub/></div>
-            <div className={sectionStyles.nine}> Testing <SiTestinglibrary/></div>
-            </div>
-        </div>
+            <Seven> Typescript <SiTypescript/> </Seven>
+            <Eigth> Git-Gitflow <FaGithub/></Eigth>
+            <Nine> Testing <SiTestinglibrary/></Nine>
+            </Section>
+        </Cont>
     );
 };
 

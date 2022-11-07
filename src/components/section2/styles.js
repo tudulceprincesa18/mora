@@ -6,11 +6,7 @@ export const Text = styled.p`
   heigth: 100%;
   text-align: center;
   display: flex;
-  @media(max-width: 768px){
-    width:50%;
-    heigth: 300px;
-    display: flex;
-    justify-content:center;
+
 `
 export const Button = styled.button`
   margin: 20px; 
@@ -30,10 +26,6 @@ export const ButtonGroup = styled.div`
     flex-direction: column;
   }
 
-  @media(min-width: 300px){
-    display: flex;
-    flex-direction: column;
-  }
 `
 
 export const Div = styled.div`
@@ -49,21 +41,17 @@ text-align: center;
 justify-content: center;
 align-items: center;
 border-radius:10px;
+
+
 @media(min-width: 768px){
-  width:60%;
+  width:100%;
   heigth: auto;
   display: flex;
   flex-direction: column;
   justify-content:center;
-  background-position: absolute;
 
-  @media(max-width: 300px;){
-    width: 100%;
-    heigth: 600px;
-    display: flex;
-    flex-direction: column;
+  @media(max-width: 380px;){
     justify-content:center;
-    background-position: absolute;
   }
 `
 
@@ -79,7 +67,7 @@ export const Container = styled.div`
   overflow: hidden;
 
   @media(max-width: 768px){
-    width:105%;
+    width:110%;
     heigth: 400px;
     display: flex;
     flex-direction: column;
@@ -90,13 +78,11 @@ export const Container = styled.div`
     padding:0;
 }
 
-@media(max-width: 300px){
-  width: 250px; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media(max-width: 380px){
+  width: 100%;
+  heigth: auto;
   justify-content: center;
-  background-position: center;
+  align-items: center; 
 }
 ` 
 export const H1 = styled.p`
