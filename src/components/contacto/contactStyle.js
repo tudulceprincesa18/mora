@@ -89,4 +89,9 @@ export const Button = styled.button `
     background-position: absolute;
     min-width: 5px;
     min-height: 5px;
+
+    @media(max-width: 380px){
+        width: 0;
+        display: none;
+    }
  `
