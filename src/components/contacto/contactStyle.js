@@ -20,6 +20,7 @@ export const Container = styled.div `
             align-items: center;
             justify-content: center;
             margin-bottom: 150px;
+            overflow: hidden;
         }
 
     `
@@ -47,6 +48,7 @@ export const Formulario = styled.div  `
         heigth: auto; 
         justify-content: center;
         align-items: center;
+        overflow: hidden;
     }
  `
 
@@ -90,8 +92,13 @@ export const Button = styled.button `
     min-width: 5px;
     min-height: 5px;
 
+    @media(max-width: 780px){
+        overflow: hidden;
+    }
+
     @media(max-width: 380px){
         width: 0;
         display: none;
+        overflow: hidden;
     }
  `
