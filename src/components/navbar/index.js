@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 import { Contenedor, Button, Nav } from './estilos';
 
 const Navbar = () => {

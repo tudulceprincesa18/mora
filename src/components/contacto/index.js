@@ -9,8 +9,8 @@ const Contacto = () => {
             <H1>Contacto</H1>
             <Form action="https://formsubmit.co/yasmartins999@gmail.com" method="POST">
                 <Input type="text" placeholder="Nombre" required/>
-                <Input type="email" placeholder="Correo electronico" required />
-                <Input type="text" placeholder="Mensaje" required />
+                <Input type="email" placeholder="Correo electronico" required/>
+                <Input type="text" placeholder="Mensaje" required/>
                 <Button>Enviar</Button>
             </Form>
             </Formulario>
