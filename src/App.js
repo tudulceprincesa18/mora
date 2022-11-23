@@ -7,13 +7,14 @@ import Footer from "./components/footer";
 import Contacto from "./components/contacto";
 import Section2 from "./components/section2";
 import Skills from "./components/skills/skills";
+import appStyles from './index.module.css';
 
 
 
 
 function App() {
   return (
-    <div className="App">
+    <div className={ appStyles.app }>
       <Navbar/>
       <Header/>
       <Section2 />
