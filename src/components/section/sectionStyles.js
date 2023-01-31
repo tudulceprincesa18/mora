@@ -41,37 +41,16 @@ export const Container = styled.div `
     }
  `
 
-export const Button1 = styled.button  `
-    width: 400px;
+export const Button = styled.button  `
+    width: 200px;
     min-width: 100px;
-    min-height: 60px;
-    height: 300px;
-    background-image: url(${entropicaimg});
+    min-height: 20px;
+    height: 60px;
+    background-color: #4716FB;
     background-size:cover;
     background-position: center;
     outline: none;
-    border: dotted white;
-    margin: 20px;
-    border-radius: 20px;
-    transition: all 500ms ease-out;
-    cursor: pointer;
-
-    @media(max-width: 380px){
-        width: 250px;
-        heigth: auto; 
-    }
- `
-
-export const Button2 = styled.button  `
-    width: 400px;
-    min-width: 100px;
-    min-height: 60px;
-    height: 300px;
-    background-image: url(${kitty});
-    background-size:cover;
-    background-position: center;
-    outline: none;
-    border: dotted black;
+    border: none;
     margin: 20px;
     border-radius: 20px;
     transition: all 500ms ease-out;

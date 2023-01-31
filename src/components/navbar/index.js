@@ -7,9 +7,9 @@ const Navbar = () => {
     return (
       <Contenedor>
            <Nav>
-             <Button><Link to='sobremi' spy={true} smooth={true} offset={50} duration={500}>Sobre mi</Link></Button>
-             <Button><Link to='contacto' spy={true} smooth={true} offset={50} duration={500}>Contacto</Link></Button>
-             <Button><Link to='proyectos' spy={true} smooth={true} offset={50} duration={500}>Proyectos</Link></Button>
+             <Button><Link to='sobremi' spy={true} smooth={true} offset={50} duration={500}>About</Link></Button>
+             <Button><Link to='contacto' spy={true} smooth={true} offset={50} duration={500}>Contact</Link></Button>
+             <Button><Link to='proyectos' spy={true} smooth={true} offset={50} duration={500}>Proyects</Link></Button>
            </Nav>
       </Contenedor>
     );

@@ -1,20 +1,20 @@
 import React from 'react';
 
-import { Container, P, Button1, Button2, Buttons} from './sectionStyles.js';
+import { Container, P, Button, Buttons} from './sectionStyles.js';
 
 
 
 function Section() {
     return(
       <Container id="proyectos"> 
-      <P> Algunos de mis proyectos </P>
+      <P> Some of my proyects </P>
       <Buttons>
-      <Button1>
+      <Button>
        <a href='https://entropica.netlify.app/'> Entropica </a>
-      </Button1>
-      <Button2>
-       <a href='https://criptokitty.netlify.app/'> Cripto-monedas  </a>
-      </Button2>
+      </Button>
+      <Button>
+       <a href='https://criptokitty.netlify.app/'> Cripto-currency  </a>
+      </Button>
       </Buttons>
       </Container>
     );

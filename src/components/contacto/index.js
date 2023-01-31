@@ -6,13 +6,13 @@ const Contacto = () => {
     return (
         <Container id="contacto">
             <Formulario>
-            <H1>Contacto</H1>
+            <H1> Contact me! </H1>
             <form action="https://formsubmit.co/yasmartins999@gmail.com" method="POST">
                 <Form>
-                    <Input type="text" placeholder="Nombre" name="name" required/>
-                    <Input type="email" placeholder="Correo electronico" name="email" required/>
-                    <Input type="text" placeholder="Mensaje" name="message" required/>
-                    <Button type="submit">Enviar</Button>
+                    <Input type="text" placeholder="Name" name="name" required/>
+                    <Input type="email" placeholder="Email" name="email" required/>
+                    <Input type="text" placeholder="Message" name="message" required/>
+                    <Button type="submit">Submit</Button>
                 </Form>
             </form>
             </Formulario>

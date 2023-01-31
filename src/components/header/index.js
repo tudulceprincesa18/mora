@@ -17,8 +17,9 @@ function Header() {
     return(
       <Container>
         <HeaderCont>
-        <H1 id="titulo"> Soy Yasmin Martins. </H1>
-        <H2 id="texto"> Frontend developer de buenos aires, argentina. </H2>
+        <H1 id="titulo"> I'm Yasmin Martins. </H1>
+        <H2 id="texto"> Web developer from buenos aires, argentina. I'm currently
+        looking for web developer positions, so here's a little bit about my work. </H2>
           </HeaderCont>
           <Img id="imagen"> </Img>
       </Container>
