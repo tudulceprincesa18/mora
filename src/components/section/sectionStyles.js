@@ -1,8 +1,4 @@
 import styled from 'styled-components';
-import kitty from '../../screenshot/criptos.jpg';
-import entropicaimg from '../../screenshot/entropica.jpg';
-
-
 
 export const Buttons = styled.div `
     display: flex;
