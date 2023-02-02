@@ -17,7 +17,7 @@ const Contacto = () => {
             </form>
             </Formulario>
             <Image>
-                <img alt="imagen" src='https://us.123rf.com/450wm/martialred/martialred1703/martialred170300026/74131554-sobre-de-mensaje-o-sobre-de-carta-de-carta-delgada-icono-de-vector-de-arte-para-aplicaciones-y-sitio.jpg?ver=6'/>
+                <img alt="imagen" src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDVyq1mn-dF7Gfr2rs0KqyKY7hL1uyGKmhWGJT2AMMNrjM_fNO'/>
             </Image>
         </Container>
     );

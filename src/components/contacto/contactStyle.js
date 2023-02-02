@@ -88,6 +88,7 @@ export const Button = styled.button `
     width: 20%;
     height: 30%;
     background-size: cover;
+    margin: 30px;
     background-position: absolute;
     min-width: 5px;
     min-height: 5px;
