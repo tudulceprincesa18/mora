@@ -24,6 +24,9 @@ function Section() {
       <Button>
         <a href='https://main--lucent-kangaroo-b78709.netlify.app/'> Javascript dictionary </a>
       </Button>
+      <Button>
+        <a href='https://brazukaindumentaria.netlify.app/'> Brazuka Store </a>
+      </Button>
       </Buttons>
       </Container>
     );
