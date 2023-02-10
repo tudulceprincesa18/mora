@@ -7,7 +7,7 @@ import { Container, P, Button, Buttons} from './sectionStyles.js';
 function Section() {
     return(
       <Container id="proyectos"> 
-      <P> Some of my proyects </P>
+      <P> Some of my projects </P>
       <Buttons>
       <Button>
        <a href='https://entropica.netlify.app/'> Entropica </a>
